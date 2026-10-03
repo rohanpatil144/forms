@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Course Registration Form</h1>
+
+    <form id="COURSE-REG-2026">
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>First Name</label>
+            <input type="text" placeholder="Ex: Your name">
+            <br><br>
+
+            <label>Surname</label>
+            <input type="text" placeholder="Ex: T">
+            <br><br>
+
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Ex: 987-897-0987">
+            <br><br>
+
+            <label>Email</label>
+            <input type="email" placeholder="Ex: rohit@gmail.com">
+            <br><br>
+
+            <label>Password</label>
+            <input type="password" minlength="5" placeholder="min 5 characters">
+            <br><br>
+
+            <label>Confirm Password</label>
+            <input type="password" minlength="5" placeholder="min 5 characters">
+            <br><br>
+
+            <label>DOB</label>
+            <input type="date">
+            <br><br>
+
+            <label>Gender</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Custom
+            <br><br>
+
+            <label>Select Country</label>
+            <select>
+                <option>-- Select --</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+            <br><br>
+
+            <label>Upload Picture</label>
+            <input type="file" accept="image/*">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Course Details -->
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <label>Select Course</label>
+            <select>
+                <option>-- Select Course --</option>
+                <option>Java Full Stack</option>
+                <option>Python Full Stack</option>
+                <option>Web Development</option>
+                <option>Data Science</option>
+            </select>
+
+            <br><br>
+
+            <label>Delivery Mode</label>
+            <input type="checkbox"> ONLINE
+            <input type="checkbox"> OFFLINE
+
+            <br><br>
+
+            <label>Comments</label>
+            <br>
+            <textarea rows="5" cols="40"
+                placeholder="Enter any additional comments..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Additional Input Types -->
+        <fieldset>
+            <legend>Additional Input Types (For Teaching)</legend>
+
+            <label>Website URL</label>
+            <input type="url" placeholder="https://example.com">
+            <br><br>
+
+            <label>Search</label>
+            <input type="search" placeholder="Search...">
+            <br><br>
+
+            <label>Age (number)</label>
+            <input type="number" value="25">
+            <br><br>
+
+            <label>Experience Level (range)</label>
+            <input type="range" min="0" max="10" value="5">
+            0-10
+            <br><br>
+
+            <label>Preferred Time</label>
+            <input type="time">
+            <br><br>
+
+            <label>Interview Date & Time</label>
+            <input type="datetime-local">
+            <br><br>
+
+            <label>Preferred Start Month</label>
+            <input type="month">
+            <br><br>
+
+            <label>Preferred Week</label>
+            <input type="week">
+            <br><br>
+
+            <label>Favorite Color</label>
+            <input type="color">
+            <br><br>
+
+            <label>Hidden Field</label>
+            <input type="hidden" name="form-id" value="COURSE-REG-2026">
+            (hidden: form-id="COURSE-REG-2026")
+            <br><br>
+
+            <label>Primary Skill (datalist)</label>
+            <input list="skills" placeholder="Type to search...">
+
+            <datalist id="skills">
+                <option value="Java">
+                <option value="Python">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="React">
+            </datalist>
+
+            <br><br>
+
+            <label>Specialization (optgroup)</label>
+            <select>
+                <option>-- Select --</option>
+
+                <optgroup label="Programming">
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>C++</option>
+                </optgroup>
+
+                <optgroup label="Web Development">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>React</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label>Hobbies (multiple select)</label>
+            <br>
+
+            <select multiple size="4">
+                <option>Reading</option>
+                <option>Coding</option>
+                <option>Gaming</option>
+                <option>Music</option>
+                <option>Traveling</option>
+            </select>
+
+            <br>
+            <small>(Hold Ctrl/Cmd to select multiple)</small>
+
+            <br><br>
+
+            <label>Documents (multiple files)</label>
+            <input type="file" multiple>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Important Attributes -->
+        <fieldset>
+            <legend>Important Attributes Demo</legend>
+
+            <label>readonly</label>
+            <input type="text" value="Cannot edit this" readonly>
+            <br><br>
+
+            <label>disabled</label>
+            <input type="text" value="Disabled field" disabled>
+            <br><br>
+
+            <label>autofocus</label>
+            <input type="text" placeholder="Gets focus on page load" autofocus>
+            <br><br>
+
+            <label>pattern (letters only)</label>
+            <input type="text" pattern="[A-Za-z]+"
+                   placeholder="Only A-Z">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Output Elements -->
+        <fieldset>
+            <legend>Output Elements</legend>
+
+            <label>output</label>
+            <output>Result appears here</output>
+
+            <br><br>
+
+            <label>progress (70%)</label>
+            <progress value="70" max="100"></progress>
+
+            <br><br>
+
+            <label>meter (60%)</label>
+            <meter value="0.6">60%</meter>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Button Types -->
+        <fieldset>
+            <legend>Button Types</legend>
+
+            <label>input type="submit"</label>
+            <input type="submit" value="Submit Form">
+            <br><br>
+
+            <label>input type="reset"</label>
+            <input type="reset" value="Reset Form">
+            <br><br>
+
+            <label>input type="button"</label>
+            <input type="button" value="Click Me">
+            <br><br>
+
+            <label>input type="image"</label>
+            <input type="image"
+                   src="https://via.placeholder.com/40"
+                   alt="Submit">
+            <br><br>
+
+            <label>&lt;button&gt; element</label>
+            <button type="button">🎉 Button Element</button>
+
+        </fieldset>
+
+        <br><hr><br>
+
+        <!-- Final Buttons -->
+        <input type="submit" value="📤 Submit Registration">
+
+        <input type="reset" value="🔄 Reset All">
+
+    </form>
+
+</body>
+</html>
